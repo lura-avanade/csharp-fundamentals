@@ -95,7 +95,35 @@
 //    selectedAction = Console.ReadLine();
 //}
 
-//Console.WriteLine("Closing application");
+string selectedAction = string.Empty;
+
+do
+{
+    Console.WriteLine("Choose the action you want to do: ");
+    Console.WriteLine("1. Add employee");
+    Console.WriteLine("2. Update employee");
+    Console.WriteLine("3. Delete employee");
+    Console.WriteLine("99. Exit application");
+    selectedAction = Console.ReadLine();
+
+    switch (selectedAction)
+    {
+        case "1":
+            Console.WriteLine("Adding new employee...");
+            break;
+        case "2":
+            Console.WriteLine("Updating employee...");
+            break;
+        case "3":
+            Console.WriteLine("Deleting employee...");
+            break;
+        default:
+            Console.WriteLine("Invalid input");
+            break;
+    }
+} while (selectedAction != "99");
+
+Console.WriteLine("Closing application");
 
 //Console.WriteLine("Enter a value: ");
 //int max = int.Parse(Console.ReadLine());
@@ -130,7 +158,12 @@
 //    i++;
 //}
 
-while (true)
+//while (true)
+//{
+//    Console.WriteLine(DateTime.Now);
+//}
+
+for (int i = 0; i < 10; i++) 
 {
-    Console.WriteLine(DateTime.Now);
+    Console.WriteLine(i);
 }
