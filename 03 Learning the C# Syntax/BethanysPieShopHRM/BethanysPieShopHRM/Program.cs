@@ -37,28 +37,50 @@ int age = int.Parse(Console.ReadLine());
 //    Console.WriteLine("Great, you can now start with the application!");
 //}
 
-switch (age)
+//switch (age)
+//{
+//    case < 18:
+//    case > 65:
+//        Console.WriteLine("Sorry, your age is not within the range we are looking for");
+//        break;
+//    case 23:
+//        Console.WriteLine("Wow, exactly what we were looking for");
+//        break;
+//    default:
+//        Console.WriteLine("Great, you can now start with the application!");
+//        break;
+//}
+
+//DateTime today = DateTime.Now;
+//bool endOfMonthPaymentStarted = false;
+
+//if (today.Date.Day == 20)
+//{
+//    Console.WriteLine("Please start end-of-month employee payments");
+//}
+//else if (today.Date.Day >= 25 && !endOfMonthPaymentStarted)
+//{
+//    Console.WriteLine("Payments will be late!");
+//}
+
+Console.WriteLine("Choose the action you want to do: ");
+Console.WriteLine("1. Add employee");
+Console.WriteLine("2. Update employee");
+Console.WriteLine("3. Delete employee");
+string selectedAction = Console.ReadLine();
+
+switch (selectedAction) 
 {
-    case < 18:
-    case > 65:
-        Console.WriteLine("Sorry, your age is not within the range we are looking for");
+    case "1":
+        Console.WriteLine("Adding new employee...");
         break;
-    case 23:
-        Console.WriteLine("Wow, exactly what we were looking for");
+    case "2":
+        Console.WriteLine("Updating employee...");
+        break;
+    case "3":
+        Console.WriteLine("Deleting employee...");
         break;
     default:
-        Console.WriteLine("Great, you can now start with the application!");
+        Console.WriteLine("Invalid input");
         break;
-}
-
-DateTime today = DateTime.Now;
-bool endOfMonthPaymentStarted = false;
-
-if (today.Date.Day == 20)
-{
-    Console.WriteLine("Please start end-of-month employee payments");
-}
-else if (today.Date.Day >= 25 && !endOfMonthPaymentStarted)
-{
-    Console.WriteLine("Payments will be late!");
 }
