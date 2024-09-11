@@ -36,3 +36,15 @@ else
 {
     Console.WriteLine("Great, you can now start with the application!");
 }
+
+DateTime today = DateTime.Now;
+bool endOfMonthPaymentStarted = false;
+
+if (today.Date.Day == 20)
+{
+    Console.WriteLine("Please start end-of-month employee payments");
+}
+else if (today.Date.Day >= 25 && !endOfMonthPaymentStarted)
+{
+    Console.WriteLine("Payments will be late!");
+}
