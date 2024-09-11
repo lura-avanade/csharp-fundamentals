@@ -41,23 +41,33 @@ int months = 12, bonus = 1000;
 //Console.WriteLine("Please enter your name");
 //string name = Console.ReadLine();
 
-double ratePerHour = 12.34;
-int numberOfHoursWorked = 165;
+//double ratePerHour = 12.34;
+//int numberOfHoursWorked = 165;
 
-double currentMonthWage = ratePerHour * numberOfHoursWorked + bonus;
-Console.WriteLine(currentMonthWage);
+//double currentMonthWage = ratePerHour * numberOfHoursWorked + bonus;
+//Console.WriteLine(currentMonthWage);
 
-ratePerHour += 3; //ratePerHour = ratePerHour + 3;
-Console.WriteLine(ratePerHour);
+//ratePerHour += 3; //ratePerHour = ratePerHour + 3;
+//Console.WriteLine(ratePerHour);
 
-if (currentMonthWage > 2000)
-    Console.WriteLine("Top paid employee!");
+//if (currentMonthWage > 2000)
+//    Console.WriteLine("Top paid employee!");
 
-int numberOfEmployees = 15;
-numberOfEmployees--; //++
-Console.WriteLine(numberOfEmployees);
+//int numberOfEmployees = 15;
+//numberOfEmployees--; //++
+//Console.WriteLine(numberOfEmployees);
 
-bool a;
-int b;
+//bool a;
+//int b;
+
+int intMaxValue = int.MaxValue;
+int intMinValue = int.MinValue;
+
+char userSelection = 'a';
+char upperVersion = char.ToUpper(userSelection);
+
+bool isDigit = char.IsDigit(userSelection);
+
+bool isLetter = char.IsLetter(userSelection);
 
 Console.ReadLine();
