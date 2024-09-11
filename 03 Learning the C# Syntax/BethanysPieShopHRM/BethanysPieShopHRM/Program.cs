@@ -11,15 +11,15 @@ Console.WriteLine("Welcome to Bethany's Pie Shop HRM!");
 
 //string 2Name = Console.ReadLine();
 
-//int monthlyWage = 1234;
+var monthlyWage = 1234;
 
-//int months = 12, bonus = 1000;
+int months = 12, bonus = 1000;
 
-//bool isActive = true;
+var isActive = true;
 
-//double rating = 99.25;
+var rating = 99.25;
 
-////byte numberOfEmployees = 300;
+var numberOfEmployees = 300;
 
 //int hoursWorked;
 
@@ -70,7 +70,7 @@ Console.WriteLine("Welcome to Bethany's Pie Shop HRM!");
 
 //bool isLetter = char.IsLetter(userSelection);
 
-//DateTime hireDate = new DateTime(2022,3,28,14,30,0);
+var hireDate = new DateTime(2022, 3, 28, 14, 30, 0);
 //Console.WriteLine(hireDate);
 
 //DateTime exitDate = new DateTime(2025,12,11);
