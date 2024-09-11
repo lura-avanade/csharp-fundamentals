@@ -40,10 +40,11 @@ int age = int.Parse(Console.ReadLine());
 switch (age)
 {
     case < 18:
-        Console.WriteLine("Too young to apply");
-        break;
     case > 65:
-        Console.WriteLine("Sorry, the selected age is too old");
+        Console.WriteLine("Sorry, your age is not within the range we are looking for");
+        break;
+    case 23:
+        Console.WriteLine("Wow, exactly what we were looking for");
         break;
     default:
         Console.WriteLine("Great, you can now start with the application!");
