@@ -22,19 +22,32 @@
 Console.WriteLine("Enter the age of the new candidate: ");
 int age = int.Parse(Console.ReadLine());
 
-if (age < 18)
+//if (age < 18)
+//{
+//    Console.WriteLine("Too young to apply");
+//    Console.WriteLine("Send email to candidate.");
+//}
+//else if (age > 65) 
+//{
+//    Console.WriteLine("Sorry, the selected age is too old");
+//    Console.WriteLine("Send email to candidate.");
+//}
+//else
+//{
+//    Console.WriteLine("Great, you can now start with the application!");
+//}
+
+switch (age)
 {
-    Console.WriteLine("Too young to apply");
-    Console.WriteLine("Send email to candidate.");
-}
-else if (age > 65) 
-{
-    Console.WriteLine("Sorry, the selected age is too old");
-    Console.WriteLine("Send email to candidate.");
-}
-else
-{
-    Console.WriteLine("Great, you can now start with the application!");
+    case < 18:
+        Console.WriteLine("Too young to apply");
+        break;
+    case > 65:
+        Console.WriteLine("Sorry, the selected age is too old");
+        break;
+    default:
+        Console.WriteLine("Great, you can now start with the application!");
+        break;
 }
 
 DateTime today = DateTime.Now;
