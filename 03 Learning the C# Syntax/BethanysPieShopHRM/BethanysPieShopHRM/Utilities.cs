@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,6 +9,20 @@ namespace BethanysPieShopHRM
 {
     internal class Utilities
     {
+
+        public static void UsingExpressionBodiedSyntax()
+        {
+            int amount = 1234;
+            int months = 12;
+            int bonus = 500;
+
+            int yearlyWageForEmployee1 = CalculateYearlyWageExpressionBodied(amount, months, bonus);
+            Console.WriteLine($"Yearly wage for employee 1 (Bethany): {yearlyWageForEmployee1}");
+        }
+
+        public static int CalculateYearlyWageExpressionBodied(int monthlyWage, int numberOfMonthsWorked, int bonus) 
+            => monthlyWage * numberOfMonthsWorked + bonus;
+
         public static void UsingNamedArguments()
         {
             int amount = 1234;
@@ -15,7 +30,7 @@ namespace BethanysPieShopHRM
             int bonus = 500;
 
             int yearlyWageForEmployee = CalculateYearlyWageWithNamed(bonus: bonus, monthlyWage: amount, numberOfMonthsWorked: months);
-            Console.WriteLine($"Yearly wage for employee: {yearlyWageForEmployee}");
+            Console.WriteLine($"Yearly wage for employee (Bethany): {yearlyWageForEmployee}");
         }
 
         public static int CalculateYearlyWageWithNamed(int monthlyWage, int numberOfMonthsWorked, int bonus)
