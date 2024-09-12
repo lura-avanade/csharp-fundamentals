@@ -9,6 +9,17 @@ namespace BethanysPieShopHRM
 {
     internal class Utilities
     {
+        public static void UsingSimpleString() 
+        {
+            string firstName = "Bethany";
+            string lastName = "Smith";
+            string s;
+            s = firstName;
+            var userName = "BethanyS";
+            userName = userName.ToLower();
+
+            userName = "";//identical to string.Empty
+        }
 
         public static void UsingExpressionBodiedSyntax()
         {
