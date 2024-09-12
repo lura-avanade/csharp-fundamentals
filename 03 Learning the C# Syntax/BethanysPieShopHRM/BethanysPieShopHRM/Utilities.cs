@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,30 @@ namespace BethanysPieShopHRM
 {
     internal class Utilities
     {
+
+        public static void ManipulatingStrings()
+        {
+            string firstName = "Bethany";
+            string lastName = "Smith";
+
+            string fullName = firstName + " " + lastName;
+            string employeeIdentification = string.Concat(firstName, lastName);
+
+            string empId = firstName.ToLower() + "-" + lastName.ToLower();
+
+            int length = empId.Length;
+
+            if (fullName.Contains("bet") || fullName.Contains("Beth"))
+            {
+                Console.WriteLine("It's Bethany!");
+            }
+
+            string subString = fullName.Substring(1, 3);
+            Console.WriteLine("Characters 2 to 4 of fullName are " + subString);
+
+            string userNameWithInterpolation = $"{firstName}-{lastName}";
+        }
+
         public static void UsingSimpleString() 
         {
             string firstName = "Bethany";
