@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Reflection.Metadata.Ecma335;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,6 +11,19 @@ namespace BethanysPieShopHRM
 {
     internal class Utilities
     {
+
+        public static void UsingEscapeCharacters()
+        {
+            string firstName = "Bethany";
+            string lastName = "Smith";
+
+            string displayName = $"Welcome!\n{firstName}\t{lastName}";
+            Console.WriteLine(displayName);
+
+            string filePath = @"C:\data\employeelist.xlsx";
+
+            string marketingTagLine = "Baking the \"best pies\" ever";
+        }
 
         public static void ManipulatingStrings()
         {
